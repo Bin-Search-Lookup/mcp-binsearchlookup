@@ -18,6 +18,22 @@ This server allows AI agents (like Claude Desktop, Cursor, and custom LLMs) to s
 - **Resiliency:** Built-in exponential backoff using `tenacity` handles network blips and `429 Rate Limit` errors gracefully.
 - **Zero-Install Deployment:** Run entirely inside a lightweight Docker container.
 
+## Registries
+
+1. **Official MCP Registry** (highest priority)
+
+The official registry is the canonical place for publicly available MCP servers. It supports both open-source and commercial SaaS MCP servers as long as the server is publicly accessible or installable.
+
+* [Official MCP Registry](https://registry.modelcontextprotocol.io)
+* [Registry Publishing Docs](https://registry.modelcontextprotocol.io/docs)
+
+**Benefits:**
+
+* Official ecosystem support
+* Namespace ownership via DNS verification
+* Consumed by downstream marketplaces and aggregators
+* Standardized installation metadata
+
 ## Installation & Usage
 
 You can run this MCP server in two ways: using Docker (Recommended) or locally via Python.

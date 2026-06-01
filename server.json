@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.bin-search-lookup/mcp-binsearchlookup",
+  "version": "1.0.0",
+  "description": "Enterprise MCP server for Bank Identification Number (BIN) lookups, fraud analysis, and bulk card auditing via BinSearchLookup.com API.",
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "python:3.12-slim",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BSL_API_KEY",
+          "description": "Your BinSearchLookup API Key (starts with bsl_)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "BSL_USER_ID",
+          "description": "Your BinSearchLookup UUID/User ID",
+          "isRequired": true,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}
